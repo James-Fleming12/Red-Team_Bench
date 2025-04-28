@@ -1,4 +1,19 @@
 a {
     color: black;
     text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Initial position */
+    }
+    50% {
+        transform: translateY(-50px); /* Move the element up */
+    }
 }
