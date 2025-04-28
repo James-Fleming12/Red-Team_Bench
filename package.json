@@ -1,18 +1,22 @@
 {
-  "name": "red-team_bench",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "astro": "^5.7.5"
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/mdx": "^3.1.8",
+    "@astrojs/rss": "^4.0.8",
+    "@astrojs/sitemap": "^3.2.0",
+    "astro": "^4.16.2",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "typescript": "^5.6.3"
   }
 }
